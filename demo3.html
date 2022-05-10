@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script> 
+     <style media="screen"> 
+      body {
+   display: block;
+    margin: 8px;
+}
+     div{
+       border: none;
+       position: absolute;
+       width: 100%;
+       height: 100%;
+     }
+     iframe
+     {
+	border: none;
+	position: absolute;
+	width:100%;
+	height:100%;
+     a {
+	     color: blue;
+       display: block;
+	width:100px;
+	height: 100px;
+     }
+    </style>
+  </head>
+  <body>
+        <iframe id="fr" src="http://localhost:8080/webshop/"></iframe>
+      <div class ="" id="demo3">
+        <a href=">Click</a>
+      </div>
+      <script>
+        window.onmousemove = function (e) {
+          var m = document.getElementById('demo3');
+          m.style.left = e.clientX - 20 + 'px';
+          m.style.top= e.clientY - 20 + 'px';
+        }
+      </script>
+  </body>
+</html>
+
